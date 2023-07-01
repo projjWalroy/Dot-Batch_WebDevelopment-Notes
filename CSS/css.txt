@@ -1,0 +1,71 @@
+box-sizing(border box) stops content to extend if padding applied.
+
+px, cm, inch size is fixed(absolute)
+
+relative unit to font size - Xem(X*parent font size) 
+                             rem(relative to root)
+
+relative unit to viewport  vm, vw
+
+default fault size of body is 16.
+
+gradient:
+    background-image: linear/radial-gradient(to____(location)/__deg,colore1,color2)
+
+shadows:
+    text-shadow: horizontal_val(from original position), -verti_val(altered direc), shadow_len, color;
+    box-shadow:
+
+max-height, max-idth.
+
+Overflow:
+    overflo: visible/hidden/scroll/auto.
+
+Position:
+    position: static/relative(relative to its position and will leave a gap if top left applied)/absolute(relative to its parent)/fixed/sticky.
+
+2D transform
+    translate(x_dir,y_dir), rotate(deg), scaleX/Y(hori,ver), skewX/Y(), matrix()
+
+3D transform:
+    transform: perspective() scaleX() rotateX();
+
+box-sizing: border-box(universal to make content reduce if border exist)
+
+Flexbox::after
+    display: flex;
+    flex-direction: coloumn/coloumn-reverse; //to make horizontal(deafault);
+    flex-wrap: wrap/nowrap/rap-reverse; //squeeze
+    flex-flow: (both in one)
+    justify-content(alignment around main axis): flex-start/flex-end/flex-center/space-around/space-between/space-evenly
+    align-items(alignment around cross axis): flex-start/flex-end/streach(default)/
+    align-content(spaces between rows):
+    gap:
+
+Flex-item:
+    order: numer(decide which comes first to last)
+    flex-grow: take available space.
+    flow-shrink: how fast it will shring if we minimize the page
+    flex-basis: same as width but can manage overflow.  
+    Flex: short hand notation.
+    Align-self: flex-start/flex-end.   
+
+transform-style: preserve-3d;
+z-index: -1; //it takes something make toward screen(3d)
+object-fit: cover; //maintain aspect ratio
+background-attatachment: fixed; //image stays fixed if we scroll
+background-size: cover; //when image is large but we want to cover with viewport and height
+background-position: center
+
+Grid:
+    flex is related to content and grid is related to layout
+    grid-template-coloumn: __px/Xfr(fraction[equa;lliy divided])/repeat(number,Xfr);
+    grid-template-row:;
+    grid-coloumn-start:; 
+    grid-coloumn-end:;
+    grid-template-are: names___;
+    grid-area:///; //all in one
+    justify-content: //change position
+    justify-item: //change according to width
+    place-content:
+    
