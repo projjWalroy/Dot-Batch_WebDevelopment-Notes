@@ -19,7 +19,7 @@ shadows:
 max-height, max-idth.
 
 Overflow:
-    overflo: visible/hidden/scroll/auto.
+    overflo:s visible/hidden/scroll/auto.
 
 Position:
     position: static/relative(relative to its position and will leave a gap if top left applied)/absolute(relative to its parent)/fixed/sticky.
@@ -68,4 +68,10 @@ Grid:
     justify-content: //change position
     justify-item: //change according to width
     place-content:
+    
+Animation:
+    transition-property: all; //also specify the part where we want to apply
+    transition-delay: //time
+    transition: by-color(property) 2s(duration) ease in/ease out 4s(delay); 
+
     
