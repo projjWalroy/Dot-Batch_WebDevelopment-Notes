@@ -3,3 +3,4 @@
 //  second most recently selected one, and so on.
 let item = $0;
 console.log(item);
+//span tag
