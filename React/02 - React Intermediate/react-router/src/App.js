@@ -9,6 +9,8 @@ import Labs from "./Components/Labs";
 import NotFound from "./Components/NotFound";
 import MainHeader from "./Components/MainHeader";
 
+//Navlink added Active class when clicked
+
 function App() {
   return (
     <div className="App">
@@ -64,5 +66,6 @@ function App() {
     </div>
   );
 }
+ /*index defines it is default route*/
 
 export default App;

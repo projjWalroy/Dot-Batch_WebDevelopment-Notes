@@ -2,10 +2,10 @@ import { createSlice } from "@reduxjs/toolkit";
 
 export const CartSlice = createSlice({
     name: "cart",
-    initialState: [],
+    initialState: [], //intial value empty array
     reducers: {
         add: (state, action) => {
-            state.push(action.payload);
+            state.push(action.payload); //IT DEFINES HATEVER INPUT PARAMETER WE HAVE SENT
         },
         remove: (state, action) => {
             return state.filter((item) => item.id !== action.payload);

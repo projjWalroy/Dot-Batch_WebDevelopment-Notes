@@ -1,7 +1,7 @@
 import { createContext, useState } from "react";
 import { baseUrl } from "../baseUrl";
 
-// Step1
+// Step1 - creating context
 export const AppContext = createContext();
 
 function AppContextProvider({ children }) {

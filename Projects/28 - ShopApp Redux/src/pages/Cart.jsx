@@ -46,7 +46,7 @@ const Cart = () => {
                   Total Amount:
                 </span>{" "}
                 ${amount}
-              </p>
+              </p> 
               <button className="bg-green-700 hover:bg-purple-50 rounded-lg text-white transition duration-300 ease-linear mt-5 border-2 border-green-600 font-bold hover:text-green-700 p-3 text-xl mr-10">
                 CheckOut Now
               </button>

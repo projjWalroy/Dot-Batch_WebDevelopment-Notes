@@ -18,7 +18,7 @@ function App() {
   // useEffect(() => {
   //   console.log("UI Renderer changed");
   // },[]);
-
+  // [] is dependencies and the code will only run when thus changes
   // Variation3 - On First Render + Whenever Dependencies CHanges
   useEffect(() => {
     console.log("UI Renderer changed");
@@ -27,7 +27,7 @@ function App() {
   // Variation4 - To Handler Unmounting of Component  
   useEffect(() => {
     console.log("Added");
-    return () => {
+    return () => {    ///this line will run first 
       console.log("Removed");
     }
   }, [text]);

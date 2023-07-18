@@ -6,7 +6,7 @@
 // step6 - create server.js
 
 const express = require("express");
-const app = express();
+const app = express(); //server instantiate
 
 // used to parse req.
 const bodyParser = require("body-parser");
