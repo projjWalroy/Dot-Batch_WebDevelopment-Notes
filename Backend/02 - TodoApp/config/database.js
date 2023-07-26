@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-require("dotenv").config();
+require("dotenv").config(); //to load .env in process
 
 const dbConnect = () => {
     mongoose.connect(process.env.DATABASE_URL, {
@@ -17,3 +17,5 @@ const dbConnect = () => {
 }
 
 module.exports = dbConnect;
+
+//this used to ensure connection bwn application and db

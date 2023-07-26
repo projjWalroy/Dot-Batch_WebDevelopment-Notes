@@ -6,14 +6,14 @@ const Todo = require("../models/Todo");
 exports.updateTodo = async(req,res) => {
     try {
         const {id} = req.params;
-        const {title,description} = req.body;
+        const {title,description} = req.body;  //this we will send in body json raw
 
         const todo = await Todo.findByIdAndUpdate(
             {
                 _id : id,
             },
-            {
-                title,
+            {   //which things I want to update
+                title, 
                 description,
                 updateAt : Date.now()
             }

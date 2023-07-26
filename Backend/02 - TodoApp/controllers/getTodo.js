@@ -27,15 +27,15 @@ exports.getTodos = async (req, res) => {
 exports.getTodoById = async (req, res) => {
   try {
     const id = req.params.id;
-    const todo = await Todo.findById({ _id: id });
+    const todo = await Todo.findById({ _id: id }); // finding here _id value is id
 
     if (!todo) {
-      return res.status(404).json({
+      return res.status(404).json({ //404 means not found
         success: false,
         message: "No Data Found with Given Id",
       });
     }
-    res.status(200).json({
+    res.status(200).json({ //200 means success
       success: true,
       data: todo,
       message: "Success",

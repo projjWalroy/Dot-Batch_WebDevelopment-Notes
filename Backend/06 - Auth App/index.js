@@ -23,3 +23,9 @@ app.listen(PORT,() => {
 app.get("/", (req,res) => {
     res.send("<h1>Auth App</h1>")
 })
+/*
+
+    Authorization: access right
+    Authentication: identity verification
+
+*/

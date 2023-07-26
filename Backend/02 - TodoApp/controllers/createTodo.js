@@ -3,6 +3,7 @@ const Todo = require("../models/Todo");
 
 //define route handler
 
+//createTodo function 
 exports.createTodo = async(req,res) => {
     try {
             //extract title and desxcription from reauest body

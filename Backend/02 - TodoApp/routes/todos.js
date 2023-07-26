@@ -7,10 +7,10 @@ const { getTodos,getTodoById } = require("../controllers/getTodo.js");
 const { updateTodo} = require("../controllers/updateTodo");
 const { deleteTodo} = require("../controllers/deleteTodo");
 
-//define APi routes
+//define APi routes and maping with path
 router.post("/createTodo", createTodo);
 router.get("/getTodos", getTodos);
-router.get("/getTodos/:id", getTodoById);
+router.get("/getTodos/:id", getTodoById); //: is id
 router.put("/updateTodo/:id", updateTodo);
 router.delete("/deleteTodo/:id", deleteTodo);
 

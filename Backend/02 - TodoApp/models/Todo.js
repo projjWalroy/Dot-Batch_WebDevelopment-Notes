@@ -1,5 +1,7 @@
 const mongoose = require("mongoose");
 
+//creating schema 
+
 const todoSchema = new mongoose.Schema(
     {
         title:{
