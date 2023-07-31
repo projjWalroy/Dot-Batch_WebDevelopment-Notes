@@ -42,7 +42,7 @@ async function uploadFileToCloudinary(file, folder, quality) {
     if (quality) {
         options.quality = quality;
     }
-    options.resource_type = "auto"
+    options.resource_type = "auto" //to make the 
     return await cloudinary.uploader.upload(file.tempFilePath, options);
 }
 
@@ -50,6 +50,7 @@ async function uploadFileToCloudinary(file, folder, quality) {
 exports.imageUpload = async (req, res) => {
     try {
 
+        //extract
         const { name, tags, email } = req.body;
         console.log(name, tags, email);
 
@@ -57,6 +58,7 @@ exports.imageUpload = async (req, res) => {
         const imageFile = req.files.imageFile;
         console.log(imageFile);
 
+        //setting and getting file extension
         const supportedTypes = ["png", "jpg", "jpeg"];
         const fileType = imageFile.name.split('.')[1].toLowerCase();
 
